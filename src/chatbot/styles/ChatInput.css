@@ -1,0 +1,98 @@
+/* 入力欄 */
+.chatbot-input-container {
+    padding: 10px 16px;
+    border-top: 1px solid var(--color-input-border);
+}
+
+.chatbot-input {
+    display: flex;
+    border-top: 2px solid #FFB5C2;
+    padding: 8px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chatbot-input-area {
+    border: 1px solid var(--color-input-border);
+    border-radius: 999px;
+    padding: 8px 10px 8px 30px;
+}
+
+.chat-input-field {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 10px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-height: 100px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+
+.chat-input input::placeholder {
+    font-weight: 700;
+    color: var(--color-gray-700);
+}
+
+.chat-input.chat-input-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.chat-input.chat-input-disabled input {
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.chat-input.chat-input-disabled button {
+    background-color: var(--color-btn-bg-primary-disabled);
+    cursor: not-allowed;
+}
+
+.send-button {
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--color-btn-bg-primary-default);
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.send-button img {
+    width: 26px;
+    height: 26px;
+}
+
+.send-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* スマホ幅 */
+@media screen and (max-width: 767px) {
+    .chatbot-input-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 9999;
+        border-top: 1px solid var(--color-input-border);
+    }
+
+}

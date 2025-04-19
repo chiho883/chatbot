@@ -1,0 +1,14 @@
+# OS・エディタ関連
+.DS_Store
+.vscode/
+
+# パッケージ・依存ファイル
+node_modules/
+
+# 環境変数ファイル
+.env
+.env.local
+.env.production
+
+# ログや一時ファイル
+*.log
